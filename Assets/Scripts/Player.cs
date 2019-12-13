@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     private float _speed = 3.0f;
     private float _gravity=  1.3f;
     private CharacterController _controller;
-    private float _jumpHeight = 20.0f;
+    private float _jumpHeight = 22.0f;
     private float _yVelocity;
     private bool _canDoubleJump;
     private int _coins = 0;

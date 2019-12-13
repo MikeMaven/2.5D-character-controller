@@ -9,8 +9,11 @@ public class Coin : MonoBehaviour
         if (other.tag == "Player")
         {
             Player player = other.gameObject.GetComponent<Player>();
-            player.AddCoinToInventory();
-            Destroy(this.gameObject);
+            if (player)
+            {
+                player.AddCoinToInventory();
+                Destroy(this.gameObject);
+            }
         }
     }
 }
